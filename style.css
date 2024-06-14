@@ -51,6 +51,7 @@ html, body{
 }
 .btn{
     /* align-items: flex-end; */
+    position: absolute;
     top: 85%;
     left: 53%;
     transform: translate(-85%,-53%);
