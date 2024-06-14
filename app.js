@@ -9,6 +9,8 @@ let dice6 = document.getElementById("dice6");
 
 
 function roll(){
+
+
     
     let rolledNumber = Math.floor(Math.random()*6)+1;
     
@@ -24,30 +26,35 @@ function roll(){
             
             hideall();
             dice2.style.display = "block";
+            dice2.style.transform = "translate(-50%,-50%) rotate(90deg)";
 
         }
         else if(rolledNumber == 3){
             
             hideall();
             dice3.style.display = "block";
+            dice3.style.transform = "translate(-50%,-50%) rotate(90deg)";
 
         }
         else if(rolledNumber == 4){
             
             hideall();
             dice4.style.display = "block";
+            dice4.style.transform = "translate(-50%,-50%) rotate(90deg)"
 
         }
         else if(rolledNumber == 5){
             
             hideall();
             dice5.style.display = "block";
+            dice5.style.transform = "translate(-50%,-50%) rotate(90deg)";
 
         }
         else if(rolledNumber == 6){
             
             hideall();
             dice6.style.display = "block";
+            dice6.style.transform = "translate(-50%,-50%) rotate(90deg)"
 
         }
     
@@ -64,11 +71,13 @@ function roll(){
 
     }
 
-     //this was by chatgpt :| will try to do better 
+    //this was by chatgpt :| will try to do better 
     //now i know that i need to learn interval
 
     function animateDice() {
-        let i = Math.floor(Math.random()*6)+1; // start from 6
+        // let i = Math.floor(Math.random()*6)+1;
+        // start from 6
+           let i = 6;
         const interval = setInterval(() => {
             hideall();
             if(i === 1){
@@ -76,14 +85,22 @@ function roll(){
                 roll()
             } else if(i === 2){
                 dice2.style.display = "block";
+                dice2.style.transform = "translate(-50%,-50%) rotate(90deg) rotate3d(1, 1, 1, 45deg)"
             } else if(i === 3){
                 dice3.style.display = "block";
+                dice3.style.transform = "translate(-50%,-50%) rotate(90deg) rotate3d(1, 1, 1, -50deg)"
+
             } else if(i === 4){
                 dice4.style.display = "block";
+                dice4.style.transform = "translate(-50%,-50%) rotate(90deg) rotate3d(1, 1, 1, 45deg)"
+
             } else if(i === 5){
                 dice5.style.display = "block";
+                dice5.style.transform = "translate(-50%,-50%) rotate(90deg) rotate3d(1, 1, 1, -45deg)"
+
             } else if(i === 6){
                 dice6.style.display = "block";
+                dice6.style.transform = "translate(-50%,-50%) rotate(90deg) rotate3d(1, 1, 1, 45deg)"
             }
     
             i--; // decrement i
