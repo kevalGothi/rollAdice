@@ -63,3 +63,33 @@ function roll(){
         dice6.style.display = "none"
 
     }
+
+     //this was by chatgpt :| will try to do better 
+    //now i know that i need to learn interval
+
+    function animateDice() {
+        let i = Math.floor(Math.random()*6)+1; // start from 6
+        const interval = setInterval(() => {
+            hideall();
+            if(i === 1){
+                dice1.style.display = "block";
+                roll()
+            } else if(i === 2){
+                dice2.style.display = "block";
+            } else if(i === 3){
+                dice3.style.display = "block";
+            } else if(i === 4){
+                dice4.style.display = "block";
+            } else if(i === 5){
+                dice5.style.display = "block";
+            } else if(i === 6){
+                dice6.style.display = "block";
+            }
+    
+            i--; // decrement i
+    
+            if (i < 1) {
+                clearInterval(interval); // stop the interval when i < 1
+            }
+        }, 70); // repeat every 1000 milliseconds (1 second)
+    }

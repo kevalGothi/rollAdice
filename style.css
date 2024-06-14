@@ -51,18 +51,18 @@ html, body{
 }
 .btn{
     /* align-items: flex-end; */
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-80%,-50%);
+    top: 85%;
+    left: 53%;
+    transform: translate(-85%,-53%);
     /* padding: 10px; */
     /* border-radius: 5px; */
 
 }
 
 .btn button{
-    padding: 10px;
+    padding: 10px 60px;
     border-radius: 5px;
+    font-size: 18px;
 }
 
 #dice1{
