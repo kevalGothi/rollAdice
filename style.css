@@ -48,6 +48,7 @@ html, body{
     font-size: 80px;
     font-family: cursive;
     border-radius: 60px;
+    box-shadow: inset 5px 5px 14px 4px #322c3798;
 }
 .btn{
     /* align-items: flex-end; */
